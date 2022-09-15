@@ -4,7 +4,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: url("background.jpg");
+  /* background: url("background.jpg"); */
   background-size: cover;
 }
 
@@ -151,4 +151,8 @@ a {
   border-radius: 0px;
   background-color: #fff;
   color: black;
+}
+
+#word-count-container {
+  display: none;
 }

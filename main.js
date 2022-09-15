@@ -103,6 +103,8 @@ const mainFunctionProfile = () => {
 
     if (userDetails.filename) {
       document.getElementById("download-file-label").style.display = "block"
+      document.getElementById("word-count-container").style.display = "block"
+      document.getElementById("word-count").innerHTML = userDetails.count
       document.getElementById("profile__doc").style.display = "block"
       document.getElementById("profile__doc").innerHTML = userDetails.filename
       document.getElementById("profile__doc").name = userDetails.filename
@@ -190,6 +192,8 @@ const fileUpload = () => {
     })
     // .then(function(data){ // use different name to avoid confusion
     .then(function (res) {
+      document.getElementById("word-count").innerHTML = res.count
+      document.getElementById("word-count-container").style.display = "block"
       alert(res.message)
     })
 }
