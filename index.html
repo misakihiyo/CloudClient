@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Eva Shrestha</title>
+    <script src="main.js"></script>
+  </head>
+  <body onload="mainFunctionProfile()">
+    <div class="profile">
+      <h1>Profile</h1>
+      <div class="profile-details">
+        <div class="profile-item">
+          <span>Username:</span>
+          <span id="profile__username"></span>
+        </div>
+        <div class="profile-item">
+          <span>First Name:</span>
+          <span id="profile__fname"></span>
+        </div>
+        <div class="profile-item">
+          <span>Last Name:</span>
+          <span id="profile__lname"></span>
+        </div>
+        <div class="profile-item">
+          <span>Email:</span>
+          <span id="profile__email"></span>
+        </div>
+      </div>
+
+      <form enctype="multipart/form-data" class="profile-form">
+        <h3 class="profile-item" id="upload-file-label">Upload</h3>
+        <input
+          type="file"
+          name="file"
+          id="doc-file"
+          class="file-input"
+          onchange="fileSelect()"
+        />
+        <button
+          id="upload-button"
+          type="button"
+          class="button"
+          onclick="fileUpload()"
+        >
+          upload
+        </button>
+      </form>
+
+      <div class="profile-download">
+        <h3 class="profile-item" id="download-file-label">
+          Download file in profile
+        </h3>
+        <button
+          onclick="fileDownload()"
+          class="button"
+          id="profile__doc"
+          style="display: none"
+        >
+          Filename
+        </button>
+      </div>
+      <button class="button logout-button" onclick="Logout()">Logout</button>
+    </div>
+  </body>
+</html>

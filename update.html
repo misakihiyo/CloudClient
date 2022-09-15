@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Eva Shrestha</title>
+    <script src="main.js"></script>
+  </head>
+  <body onload="mainFunctionUpdate()">
+    <div class="login">
+      <h1>Update profile</h1>
+      <form class="form">
+        <h2 id="user">Welcome</h2>
+        <div class="form-item">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" />
+        </div>
+
+        <div class="form-item">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" />
+        </div>
+
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+        <button type="button" class="button" onclick="submitUpdate()">
+          Update
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

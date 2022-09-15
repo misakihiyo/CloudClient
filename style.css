@@ -1,0 +1,154 @@
+/* login or register */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("background.jpg");
+  background-size: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #29334b;
+  padding: 25px;
+  -webkit-box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .form-item {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+}
+
+.form .form-item label {
+  font-size: 20px;
+}
+
+.form .form-item input {
+  font-size: 20px;
+  padding: 12px 20px;
+  border: 1px solid #ababab;
+  border-radius: 25px;
+}
+.form .form-item input:focus {
+  outline: transparent;
+  border-color: #29334b;
+}
+
+.button {
+  background-color: #29334b;
+  color: #fff;
+  border: 1px solid #29334b;
+  padding: 12px 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #4d5c75;
+  border-color: #4d5c75;
+  color: #fff;
+}
+
+.button:disabled {
+  background-color: #ababab;
+  border: none;
+  color: black;
+}
+
+a {
+  font-size: 25px;
+}
+
+.link {
+  margin-top: 20px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 25px;
+  -webkit-box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 14px 3px rgba(0, 0, 0, 0.75);
+}
+
+.profile .profile-details {
+  margin: 8px 20px;
+}
+
+.profile .profile-item {
+  font-size: 25px;
+  text-align: center;
+}
+
+.file-input {
+  font-size: 20px;
+}
+
+.file-input::file-selector-button {
+  background-color: #29334b;
+  color: #fff;
+  border: 1px solid #29334b;
+  padding: 8px 25px;
+  border-radius: 25px;
+  font-size: 20px;
+  margin: 12px;
+  cursor: pointer;
+}
+
+.file-input::file-selector-button:hover {
+  background-color: #4d5c75;
+  color: #fff;
+  border: 1px solid #4d5c75;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+}
+
+#download-file-label {
+  display: none;
+}
+
+.profile .button {
+  margin: 0px;
+}
+
+.profile-download {
+  margin: 20px;
+  text-align: center;
+}
+
+.logout-button {
+  position: fixed;
+  right: 0;
+  top: 0;
+  border-radius: 0px;
+  background-color: #fff;
+  color: black;
+}
