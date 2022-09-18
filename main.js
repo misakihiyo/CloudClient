@@ -80,7 +80,6 @@ const mainFunctionProfile = () => {
   const username = localStorage.getItem("username")
   const uploadButton = document.getElementById("upload-button")
   const docFile = document.getElementById("doc-file")
-  const uploadFileLabel = document.getElementById("upload-file-label")
 
   if (docFile.value === "") {
     uploadButton.disabled = true //button remains disabled
@@ -91,6 +90,11 @@ const mainFunctionProfile = () => {
   if (!username) {
     return (window.location.href = "login.html")
   }
+}
+
+const getUserDetails = () => {
+  const uploadFileLabel = document.getElementById("upload-file-label")
+  const username = localStorage.getItem("username")
 
   const url = `${mainURL}/user?name=${username}`
 
@@ -195,6 +199,7 @@ const fileUpload = () => {
       document.getElementById("word-count").innerHTML = res.count
       document.getElementById("word-count-container").style.display = "block"
       alert(res.message)
+      getUserDetails()
     })
 }
 
